@@ -1,10 +1,10 @@
 export function getList() {
-    return fetch('http://localhost:3000/')
+    return fetch('http://localhost:3000/product/')
       .then(data => data.json())
   }
   
   export function setItem(item) {
-   return fetch('http://localhost:3000/', {
+   return fetch('http://localhost:3000/product/', {
      method: 'POST',
      headers: {
        'Content-Type': 'application/json'
